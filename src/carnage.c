@@ -3,10 +3,10 @@
 int main(void)
 {
     const char carnage[7] = "CARNAGE";
-    const int carnage_size = sizeof(carnage) / sizeof(carnage[0]);
-    for (int i = 0; i < carnage_size; i++)
+    const unsigned char carnage_size = 7;
+    for (unsigned char i = 0; i < carnage_size; i++)
     {
-        for (int j = 0; j < carnage_size; j++)
+        for (unsigned char j = 0; j < carnage_size-1; j++)
         {
             printf("%c \t", carnage[i+j]);
         }
